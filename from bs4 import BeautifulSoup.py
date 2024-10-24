@@ -40,8 +40,12 @@ def extract_url():
     url_list=[]
     # Nur die URLs extrahieren
     urls = [link['href'] for link in links]
-    for id4,elem in enumerate(urls,1):
-        url_list.append((id4,elem))
+    var = 1
+    for elem in urls:
+        p = re.compile('/doi/')
+        if p.match(elem):
+            url_list.append((var,"https://journals.aom.org"+elem))
+            var+=1
     return(url_list)    
     
     
@@ -51,12 +55,12 @@ def extract_abstracts():
     # Alle Abstracts finden (Beispiel: wenn sie in einem <div> mit der Klasse 'abstract' sind)
     abstracts = soup.find_all('span', class_='hlFld-Abstract')
     # Text des Abstracts extrahieren
-    abstract_texts = [abstract.get_text(strip=True) if abstract else 'no abstract' for abstract in abstracts]
-
+ 
+    abstract_texts = [abstract.get_text(strip=True) for abstract in abstracts]
     
-    return(abstract_texts)
+    return(abstracts)
 
 
-print(len(extract_url()))
+
 
 
