@@ -1,4 +1,6 @@
 from bs4 import BeautifulSoup
+import csv
+import pandas as pd
 import regex as re
 with open ("html_doc3.html", encoding='utf-8')as file: 
     soup = BeautifulSoup(file, 'xml')   
@@ -7,60 +9,97 @@ def extract_title():
     titles = soup.find_all('h4', class_="meta__title meta__title__margin")
     title_list = []
     # Extract and return the titles
-    for index, title in enumerate(titles, 1):
-        title_text = title.get_text(strip=True)
-        title_list.append((index, title_list))
-    return(title_list)
+    for title in titles:
+        title_text = title.get_text()
+        title_list.append(str(title_text))
+    return title_list
 
 
 def extract_autor():
     autors = soup.find_all('ul', class_="meta__authors rlist--inline" )
 
     autor_list = []
-    for index2, autor in enumerate(autors, 1):
-        autor_text = autor.get_text(strip= True)
-        autor_list.append((index2, autor_text))
-    return(autor_list)
+    for autor in autors:
+        autor_text = autor.get_text()
+        autor_list.append(autor_text)
+    return autor_list
 
 def extract_meta_dates():
     meta_dates = soup.find_all('div', class_="meta__details")
     md_list = []
-    for i3, meta_date in enumerate(meta_dates, 1):
+    for meta_date in meta_dates:
         this_soup = BeautifulSoup(str(meta_date), 'xml')
         journal = this_soup.find('a', class_="meta__serial")
-        journal_text = journal.get_text(strip=True)
+        journal_text = journal.get_text(strip=True)if journal else "Not found"
         date = this_soup.find('span', class_="meta__epubDate")
         date_text = date.get_text(strip=True)if date else "Not found"
         md_list.append((journal_text, date_text))
-    return(md_list)
+    return md_list 
 
 def extract_url():    
     # Alle Links finden
     links = soup.find_all('a', href=True)
-    url_list=[]
+    
     # Nur die URLs extrahieren
     urls = [link['href'] for link in links]
-    var = 1
-    for elem in urls:
-        p = re.compile('/doi/')
-        if p.match(elem):
-            url_list.append((var,"https://journals.aom.org"+elem))
-            var+=1
-    return(url_list)    
+    p = re.compile('/doi/')
+    url_text = ["https://journals.aom.org" + elem for elem in urls if p.match(elem)]
+
+    return url_text   
     
     
 
 def extract_abstracts():
     
     # Alle Abstracts finden (Beispiel: wenn sie in einem <div> mit der Klasse 'abstract' sind)
-    abstracts = soup.find_all('span', class_='hlFld-Abstract')
+    abstracts = soup.findAll('span', class_='hlFld-Abstract')
     # Text des Abstracts extrahieren
  
-    abstract_texts = [abstract.get_text(strip=True) for abstract in abstracts]
+    abstract_texts = [abstract.text for abstract in abstracts]
     
-    return(abstracts)
+    return abstract_texts
 
 
 
+def export_to_csv(filename='output.csv'):
+    # Extract data from the functions
+    titles = extract_title()
+    authors = extract_autor()
+    meta_dates = extract_meta_dates()
+    urls = extract_url()
+    abstracts = extract_abstracts()
 
+    # Determine the maximum number of rows
+    max_rows = max(len(titles), len(authors), len(meta_dates), len(urls), len(abstracts))
+
+    # Prepare rows for CSV
+    rows = []
+    for i in range(max_rows):
+        
+        title = titles[i] if i < len(titles) else ''
+        author = authors[i] if i < len(authors) else ''
+        journal = meta_dates[i][0] if i < len(meta_dates) else ''  # Journal
+        date = meta_dates[i][1] if i < len(meta_dates) else ''  # Date
+        url = urls[i] if i < len(urls) else ''
+        abstract = abstracts[i] if i < len(abstracts) else ''
+        
+        
+        rows.append([title, author, journal, date, url, abstract])
+             
+
+    # Write to CSV
+    with open(filename, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file, dialect="excel")
+        # Write the header row
+        writer.writerow(['Title', 'Authors', 'Journal', 'Publication Date', 'URL', 'Abstract'])
+        # Write the data rows
+        writer.writerows(rows)
+    
+    df= pd.read_csv(filename)
+    df.to_excel('table.xlsx', index=False)
+
+    print(f"Data exported to {filename}")
+
+# Call the export function to create the CSV
+export_to_csv("table.csv")
 
