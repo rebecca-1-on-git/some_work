@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import csv
 import pandas as pd
 import regex as re
-with open ("html_doc3.html", encoding='utf-8')as file: 
+with open ("AoM201_206.html", encoding='utf-8')as file: 
     soup = BeautifulSoup(file, 'xml')   
 
 def extract_title():
@@ -96,7 +96,7 @@ def export_to_csv(filename='output.csv'):
         writer.writerows(rows)
     
     df= pd.read_csv(filename)
-    df.to_excel('table.xlsx', index=False)
+    df.to_excel('table1.xlsx', index=False)
 
     print(f"Data exported to {filename}")
 
