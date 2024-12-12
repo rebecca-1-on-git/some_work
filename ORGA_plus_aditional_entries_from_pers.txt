@@ -1,0 +1,194 @@
+Academy of Management Journal	A+
+Academy of Management Review	A+
+Administrative Science Quarterly	A+
+Organization Science	A+
+Strategic Management Journal	A+
+Academy of Management Annals	A
+Academy of Management Discoveries	A
+Accounting, Organizations and Society	A
+Annual Review of Organizational Psychology and Organizational Behavior	A
+British Journal of Industrial Relations	A
+Entrepreneurship: Theory and Practice	A
+Global Strategy Journal	A
+Human Relations	A
+Human Resource Management	A
+Human Resource Management Journal	A
+Human Resource Management Review	A
+Industrial and Labor Relations Review (ILR Review)	A
+Information Systems Research	A
+International Journal of Human Resource Management	A
+Journal of Business Ethics	A
+Journal of Business Venturing	A
+Journal of Economic Behavior and Organization	A
+Journal of Information Technology	A
+Journal of International Business Studies	A
+Journal of Management	A
+Journal of Management Studies	A
+Journal of Organizational Behavior	A
+Journal of Product Innovation Management	A
+Journal of Vocational Behavior	A
+Journal of World Business	A
+Leadership Quarterly	A
+Nature Human Behaviour	A
+Organization Studies	A
+Organization Theory	A
+Organizational Behavior and Human Decision Processes	A
+Organizational Research Methods	A
+Personnel Psychology	A
+Research Policy (RP)	A
+Strategic Entrepreneurship Journal	A
+Strategy Science	A
+Academy of Management Perspectives	B
+Academy of Management, Learning & Education	B
+Advances in Strategic Management	B
+Applied Psychology: an International Review	B
+Big Data & Society	B
+British Journal of Management	B
+Business and Society	B
+Business Ethics Quarterly	B
+Business Horizons	B
+Business Research	B
+Business Strategy and the Environment	B
+California Management Review	B
+Computers in Human Behavior	B
+Corporate Governance : An International Review	B
+Creativity and Innovation Management	B
+Culture and Organization	B
+DBW Die Betriebswirtschaft - Business Administration Review	B
+Employee Relations	B
+Entrepreneurship and Regional Development	B
+Equality, Diversity and Inclusion: An International Journal	B
+European Business Review	B
+European Journal of Industrial Relations	B
+European Journal of International Management	B
+European Journal of Work and Organizational Psychology	B
+European Management Journal	B
+European Management Review	B
+Family Business Review	B
+Gender and Society	B
+Gender, Work & Organization	B
+Group & Organization Management	B
+Harvard Business Review	B
+IEEE Transactions on Engineering Management	B
+Industrial and Corporate Change	B
+Industrial Marketing Management	B
+Industrial Relations Journal	B
+Industrial Relations: A Journal of Economy and Society	B
+Industry & Innovation	B
+Information and Management	B
+Information and Organization	B
+Innovation: Organization & Management	B
+International Business Review	B
+International Journal of Management Reviews	B
+International Journal of Project Management	B
+International Small Business Journal	B
+Journal of Business and Psychology	B
+Journal of Business Economics	B
+Journal of Business Research	B
+Journal of Business Venturing Design	B
+Journal of Business Venturing Insights	B
+Journal of Cleaner Production	B
+Journal of Economic Psychology	B
+Journal of Entrepreneurship	B
+Journal of Family Business Strategy	B
+Journal of International Management	B
+Journal of Leadership & Organizational Studies	B
+Journal of Management & Organization	B
+Journal of Management Inquiry	B
+Journal of Managerial Psychology	B
+Journal of Occupational and Organizational Psychology	B
+Journal of Occupational Health Psychology	B
+Journal of Organizational Sociology	B
+Journal of Professions and Organization	B
+Journal of Small Business Management	B
+Kölner Zeitschrift für Soziologie und Sozialpsychologie	B
+Kyklos	B
+Leadership	B
+Leviathan : Berliner Zeitschrift für Sozialwissenschaft	B
+Long Range Planning	B
+M@n@gement (früher: M@n@gement online)	B
+Management and Organisation Review	B
+Management Decision	B
+Management International Review	B
+Management Learning	B
+Managementforschung	B
+MIS Quarterly Executive	B
+MIT Sloan Management Review	B
+Organization	B
+Organizational Dynamics	B
+Organizational Psychology Review	B
+Personnel Review	B
+PLoS One	B
+Project Management Journal	B
+R&D Management	B
+Regional Studies	B
+Research in Organizational Behavior	B
+Research in the Sociology of Organizations	B
+Review of Managerial Science	B
+Scandinavian Journal of Management	B
+Schmalenbach Business Review - eingestellt	B
+Schmalenbach Journal of Business Research (SBUR)	B
+Small Business Economics	B
+Social Forces	B
+Socio-Economic Review	B
+Soziale Systeme : Zeitschrift für soziologische Theorie	B
+Strategic Management Review	B
+Strategic Organization	B
+Studies in Higher Education	B
+Technological Forecasting and Social Change	B
+Technovation	B
+Voluntas: International Journal of Voluntary and Non-Profit Organization	B
+Work & Stress : An International Journal of Work Health and Organisations	B
+Work and Occupations	B
+Work, Employment and Society	B
+Zeitschrift für Personalforschung: German Journal of Research in Human Resource Management	B
+zfbf Schmalenbachs Zeitschrift für betriebswirtschaftliche Forschung (eingestellt)	B
+Journal of Applied Psychology	A+
+Management Science	A+
+Annual Review of Organizational Pychology and Organizational Behavior	A
+ILR Review	A
+Journal of Economic Behavior & Organization	A
+Journal of Labor Economics	A
+Journal of Personality and Social Psychology	A
+Personality and Social Psychology Bulletin	A
+Research Policy	A
+Academy of Management Learning & Education	B
+Applied Psychology - An International Review	B
+Asia Pacific Journal of Management	B
+Business & Society	B
+Business Research Quarterly	B
+Economic and Industrial Democracy	B
+Economic Letters	B
+European Journal of Management	B
+European Journal of Work & Organizational Psychology	B
+Gender & Society	B
+German Economic Review	B
+German Journal of Human Resource Management	B
+Group and Organization Management	B
+Group Processes & Intergroup Relations	B
+Human-Computer Interaction	B
+International Journal of Selection and Assessment	B
+International Labour Review	B
+Journal of Applied Behavioral Science	B
+Journal of Applied Social Psychology	B
+Journal of Behavioral and Experimental Economics	B
+Journal of Cross Cultural Psychology	B
+Journal of Human Resources	B
+Journal of Industrial Relations	B
+Journal of Organizational Behavior Management	B
+Journal of Organizational Change Management	B
+Journal of Personnel Psychology	B
+Labour Economics	B
+Labour: Review of Labour Economics and Industrial Relations	B
+M@n@gement	B
+Management and Organization Review	B
+management revue - Socio-Economic Studies	B
+New Technology, Work and Employment	B
+Nonprofit Management & Leadership	B
+Organization & Environment	B
+Personality and Individual Differences	B
+Relations Industrielles / Industrial Relations	B
+Schmalenbach Business Review (SBR)	B
+Thunderbird International Business Review	B
+Work & Stress	B
+Work, Aging and Retirement	B
