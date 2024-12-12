@@ -1,4 +1,6 @@
 import re
+import pandas as pd
+from journal import Journal
 
 @staticmethod
 def get_PERS():
@@ -36,3 +38,33 @@ def writeFinalListToFile(orga, pers):
     with open ('ORGA_plus_aditional_entries_from_pers.txt', 'w') as file:
         for key,value in final.items():
             file.write(key + '\t' + value + '\n')
+
+@staticmethod
+def getJournalListFromFile(filename :str):
+    '''
+        reads in a text file that contains a journal name and its rating separated with a \t for each line and returns a list of Journal Objects        
+    '''
+    journalList = []
+    with open (filename,'r') as file:
+        for l in file: 
+            l = l.split('\t')
+            l = [_.strip('\n') for _ in l]
+            this_journal = Journal(l[0], l[1])
+            journalList.append(this_journal)
+    return journalList
+
+
+@staticmethod
+
+def writeResultsToFile():
+    
+    # write to file ist noch nicht fertig
+    suchstrings = pd.read_excel('Resilienz_Paper.xlsx', sheet_name='Suchstrings')
+    ergebnisse = pd.read_excel('Resilienz_Paper.xlsx', sheet_name='Ergebnisse')
+
+    suchstrings.loc['Suchstring']=['jetzt aber wirklich','','','','','']
+    print(suchstrings.iloc[52,0])
+    with pd.ExcelWriter('example.xlsx', mode = 'w') as writer:
+        suchstrings.to_excel(writer, sheet_name='Suchstrings', index=False)
+        ergebnisse.to_excel(writer, sheet_name='Ergebnisse', index=False)
+
