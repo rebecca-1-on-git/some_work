@@ -18,3 +18,6 @@ class Publication():
     
     def getJournal(self):
         return self.journal
+    
+    def getAuthor(self):
+        return self.author

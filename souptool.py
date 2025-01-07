@@ -62,14 +62,6 @@ def scraping(journalList: list, years = [2019, 2020, 2021, 2022, 2023, 2024]):
         hitsInfo.append(SearchStringEntry(numResults = numResultAllYears, journal = journal, hitsNoMismatch=count))
     return hitsInfo, results
 
-
-
-    
-
-
-
-   
-
 class LiteraturRecherche():
     @ staticmethod
     def readInAtt(filepath):

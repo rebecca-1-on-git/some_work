@@ -55,16 +55,18 @@ def getJournalListFromFile(filename :str):
 
 
 @staticmethod
-
-def writeResultsToFile():
+def writeResultsToFile(hitsInfo: list, results: list):
     
     # write to file ist noch nicht fertig
-    suchstrings = pd.read_excel('Resilienz_Paper.xlsx', sheet_name='Suchstrings')
-    ergebnisse = pd.read_excel('Resilienz_Paper.xlsx', sheet_name='Ergebnisse')
-
-    suchstrings.loc['Suchstring']=['jetzt aber wirklich','','','','','']
-    print(suchstrings.iloc[52,0])
-    with pd.ExcelWriter('example.xlsx', mode = 'w') as writer:
-        suchstrings.to_excel(writer, sheet_name='Suchstrings', index=False)
-        ergebnisse.to_excel(writer, sheet_name='Ergebnisse', index=False)
+    suchstrings = pd.read_excel('example.xlsx', sheet_name='Suchstrings')
+    ergebnisse = pd.read_excel('example.xlsx', sheet_name='Ergebnisse')
+    for elem in hitsInfo:
+        suchstrings.loc['Suchstring']=[elem.getSearchString()]
+        suchstrings.loc['Suchmaschine']=[elem.getSearchEngine()]
+        suchstrings.loc[]
+    #for elem in results:
+        #ergebnisse.loc['Titel']=[elem.getTitle(), elem.getAuthor(), elem.getYear(),'', elem.getJournal(), elem.getRating(),'']
+    #with pd.ExcelWriter('example.xlsx', mode = 'w') as writer:
+        #suchstrings.to_excel(writer, sheet_name='Suchstrings', index=False)
+        #ergebnisse.to_excel(writer, sheet_name='Ergebnisse', index=False)
 
